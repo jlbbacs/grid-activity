@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    line-height: 1.6;
+    padding: 1em;
+    background-color: rgb(212, 230, 253);
+}
+
+
+ul {
+    list-style:none;
+    padding: 0;
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1170px;
+    padding: 1em;
+}
+
+.wrapper {
+  
+
+    box-shadow: 0 0 20px 0 rgba(72,94,116, 0.1)
+}
+
+.wrapper > *{
+    padding: 1em;
+}
+.contact{
+    background-color: rgb(92, 92, 175);
+    color: white;
+ 
+}
+
+
+
+.box {
+    background-color: white;
+    
+}
+
+.box form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+
+.box form p{
+    margin:0;
+    border-color: gray;
+}
+
+.box form label{
+    display: block;
+}
+
+.box form input{
+    width: 100%;
+    padding: 1em;
+   
+} 
+
+
+.box form p{
+    margin: 0;
+}
+
+
+.box textarea{
+    width: 100%;
+    padding: 1em;
+}
+.box form button{
+    width:100%;
+    padding: 1em;
+    border: 0;
+    background-color: rgb(172, 166, 166);
+}
+
+.box form button:hover{
+    background-color: cadetblue;
+    transition:  0.5s;
+}
+
+
+
+.box form .fulltank{
+    grid-column: 1/3;
+}
+
+@media only screen and (min-width:700px){
+.wrapper{display:grid;
+        grid-template-columns: 1fr 2fr;
+        
+   
+}
+} 
+
+@media only screen and (max-width:500px){
+    .box form{display:block;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+            
+       
+    }
+    } 
+
+
+
+
+.wrapper >*{
+    padding: 2em;
+
+}
+
+.contact h3 ul{
+    text-align: left; 
+}
+
